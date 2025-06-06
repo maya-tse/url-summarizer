@@ -1,0 +1,22 @@
+{
+  "name": "url-summarizer",
+  "version": "1.0.0",
+  "description": "URL summarization service",
+  "main": "backend/server.js",
+  "scripts": {
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install-all": "cd backend && npm install && cd ../frontend && npm install",
+    "dev:backend": "nodemon backend/server.js",
+    "install:backend": "cd backend && npm install",
+    "install:frontend": "cd frontend && npm install",
+    "start:frontend": "cd frontend && npm start"
+  },
+  "keywords": [
+    "url",
+    "summarizer",
+    "ai"
+  ],
+  "author": "",
+  "license": "ISC"
+}
