@@ -1,17 +1,9 @@
 {
+  "buildCommand": "npm run build",
+  "outputDirectory": "frontend/build",
   "functions": {
     "backend/server.js": {
-      "runtime": "@vercel/node"
+      "runtime": "@vercel/node@18.x"
     }
-  },
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/backend/server.js"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/frontend/build/$1"
-    }
-  ]
+  }
 }
